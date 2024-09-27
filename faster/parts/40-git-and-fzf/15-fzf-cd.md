@@ -5,16 +5,16 @@
 listing all your projects
 ```bash
 $ find $HOME/src -maxdepth 1 -type d -printf "%f\n"
+sachsencacher.de
+slides
+wrapped
+[...]
 ```
 
 . . .
 
-create an alias
+combine with the `cd` command & store as an alias
 
 ```bash
-$ alias ffb='tig blame -- $(fzf)'
+$ alias gg='cd $HOME/src/"$(find $HOME/src -maxdepth 1 -type d -printf "%f\n" | sort -r | fzf)"'
 ```
-
- * fast blaming via `$ ffb`
- * navigate with `,` to jump to selected parent
- * use `<` to jump back  

@@ -30,6 +30,8 @@ $ git rev-parse --is-inside-work-tree
 true
 ```
 
+. . . 
+
 **in scripts**
 
 ```sh
