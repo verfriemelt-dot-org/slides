@@ -135,4 +135,6 @@ git for-each-ref --format '%(refname:lstrip=3)' refs/remotes/origin ) | \
 awk '{ print length(), $0 | "sort -n" }' | uniq | \
 cut -d ' ' -f2- | \
 fzf)
+branch 'JIRA-31337/something-even-nicer' set up to track 'origin/JIRA-31337/something-even-nicer'.
+Switched to a new branch 'JIRA-31337/something-even-nicer'
 ```
