@@ -50,6 +50,9 @@
 [user]
   email = rheine@work.org
   name = Richard Heine
+[core]
+    sshCommand = ssh -i ~/.ssh/id_rsa.work
+    excludesfile = ~/.config/git/work.gitignore
 ```
 
 ---

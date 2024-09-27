@@ -1,5 +1,8 @@
 # patat
 
+a presentation tool built by _Jasper Van der Jeugt_
+### https://github.com/jaspervdj/patat
+
 ```markdown
 ---
 title: example
