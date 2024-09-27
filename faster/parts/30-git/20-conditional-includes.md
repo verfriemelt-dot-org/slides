@@ -1,34 +1,76 @@
 # git - conditional includes
 
+**~/.gitconfig**
 ```shell
-$ git tag
-4.1.0
-4.10.0
-4.11.0
-4.2.0
-4.3.0
-4.4.0
-4.5.0
-4.6.0
-4.7.0
-4.8.0
-4.9.0
+[include]
+  path = ~/.config/git/generic
+
+[includeIf "gitdir:~/src/work/"]
+  path = ~/.config/git/work
+
+[includeIf "gitdir:~/src/private/"]
+  path = ~/.config/git/private
+```
+
+. . . 
+
+**~/.config/git/generic**
+```
+[init]
+  defaultBranch = main
+[core]
+  hooksPath = ~/.githooks
+  abbrev = 7
+  pager = less -F -X -I
+[rerere]
+  enabled = true
+  autoupdate = true
+[push]
+  default = current
+[pull]
+  rebase = true
+  default = current
+[tig "color"]
+  cursor = default blue
 ```
 
 . . .
 
-```shell
-$ git config --global tag.sort version:refname
+**~/.config/git/private**
+```
+[user]
+  email = easteregg@verfriemelt.org
+  name = ಠ_ಠ
 ```
 
-```shell
-$ git tag
-4.8.1
-4.8.2
-4.8.3
-4.8.4
-4.9.0
-4.10.0
-4.11.0
+. . .
+
+**~/.config/git/work**
 ```
+[user]
+  email = rheine@work.org
+  name = Richard Heine
+```
+
+---
+
+# git - conditional includes
+
+
+commit in repository in `/src/privat`
+```
+commit 75f56e1 (HEAD -> main)
+Author: ಠ_ಠ <easteregg@verfriemelt.org>
+Date:   2024-09-27 23:41:07 +0200
+```
+
+commit in repository in `/src/work`
+```
+commit 75f56e1 (HEAD -> main)
+Author: Richard Heine <rheine@work.org>
+Date:   2024-09-27 08:35:01 +0200
+```
+
+
+---
 
