@@ -12,7 +12,7 @@ patat:
   #    type: slideLeft
   #    frameRate: 30
   theme:
-    emph: [ bold,vividRed ]
+    emph: [ bold,vividRed,italic ]
     strong: [ bold ]
     underline: [ underline ]
     codeBlock: [ vividGreen,onRgb#101010 ]
