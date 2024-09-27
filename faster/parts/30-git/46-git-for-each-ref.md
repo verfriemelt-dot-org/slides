@@ -8,6 +8,7 @@
 $  git for-each-ref
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/heads/JIRA-1337/implement-something-nice
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/heads/main
+565bee11eac5e4cd68771ff9239b1f2371f255a4 commit refs/remotes/origin/main
 75f56e13b0add68ba2c1cfc9b30d1c398978100a commit refs/tags/0.0.1
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/tags/0.0.2
 
@@ -22,7 +23,16 @@ $  git for-each-ref refs/tags
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/tags/0.0.2
 ```
 
-. . . 
+. . .
+
+```shell
+$ git for-each-ref refs/heads refs/remotes
+e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/heads/JIRA-1337/implement-something-nice
+565bee11eac5e4cd68771ff9239b1f2371f255a4 commit refs/heads/main
+565bee11eac5e4cd68771ff9239b1f2371f255a4 commit refs/remotes/origin/main
+```
+
+. . .
 
 
 use `--format` with `refname` in order to get useful output - no awk required
