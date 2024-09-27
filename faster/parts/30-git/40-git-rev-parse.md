@@ -4,21 +4,21 @@
 
 > git-rev-parse - Pick out and massage parameters
 
-```shell
+```bash
 $  git rev-parse HEAD
 04bdae471848b34890a219699c1ad5105f2de279
 ```
 
 . . . 
 
-```shell
+```bash
 $  git rev-parse --short HEAD
 04bdae4
 ```
 
 . . .
 
-```shell
+```bash
 $ cd $(mktemp -d)
 $ git rev-parse --is-inside-work-tree
 fatal: not a git repository (or any parent up to mount point /)

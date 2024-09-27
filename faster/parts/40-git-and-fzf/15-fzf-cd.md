@@ -1,10 +1,10 @@
 ---
 
-# fzf + tig
+# fzf + cd
 
-**blame**
+listing all your projects
 ```bash
-$ tig blame -- $(fzf)
+$ find $HOME/src -maxdepth 1 -type d -printf "%f\n"
 ```
 
 . . .

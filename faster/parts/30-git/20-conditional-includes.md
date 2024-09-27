@@ -3,7 +3,7 @@
 # git - conditional includes
 
 **~/.gitconfig**
-```shell
+```bash
 [include]
   path = ~/.config/git/generic
 

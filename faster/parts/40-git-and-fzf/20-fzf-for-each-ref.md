@@ -4,11 +4,11 @@
 
 **give me branches**
 
-```shell
+```bash
 $ git branch something lame
 ```
 
-```shell
+```bash
 $ git for-each-ref --format '%(refname:lstrip=2)' refs/heads
 JIRA-1337/implement-something-nice
 main
@@ -28,7 +28,7 @@ main
 
 **sort it better**
 
-```shell
+```bash
 $ git for-each-ref --format '%(refname:lstrip=2)' refs/heads | \
     awk '{ print length(), $0 | "sort -n" }' | \
     cut -d ' ' -f2-
@@ -65,7 +65,7 @@ $ git for-each-ref --format '%(refname:lstrip=2)' refs/heads | \
 
 but remote branches are missing. so we need to get them too
 
-```shell
+```bash
 $ git fetch --all
 From github.com:verfriemelt-dot-org/slides
 * [new branch]      JIRA-31337/something-even-nicer -> origin/JIRA-31337/something-even-nicer
@@ -84,7 +84,7 @@ origin/main
 . . .
 
 **but checking checking out branches which start with `origin/` does not yield the desired result**
-```shell
+```bash
 $ git checkout origin/JIRA-31337/something-even-nicer
 Note: switching to 'origin/JIRA-31337/something-even-nicer'.
 
@@ -96,7 +96,7 @@ state without impacting any branches by switching back to a branch.
 . . .
 
 so we must get rid of the `origin/` prefix for that
-```shell
+```bash
 $ ( git for-each-ref --format '%(refname:lstrip=2)' refs/heads; \
 git for-each-ref --format '%(refname:lstrip=3)' refs/remotes/origin ) | \
     awk '{ print length(), $0 | "sort -n" }' | \
@@ -111,7 +111,7 @@ JIRA-1337/implement-something-nice
 
 add in `uniq` to get rid of branches already present in `refs/heads`
 
-```shell
+```bash
 $ ( git for-each-ref --format '%(refname:lstrip=2)' refs/heads; \
     git for-each-ref --format '%(refname:lstrip=3)' refs/remotes/origin ) | \
     awk '{ print length(), $0 | "sort -n" }' | uniq | \
@@ -129,7 +129,7 @@ $ ( git for-each-ref --format '%(refname:lstrip=2)' refs/heads; \
 
 combine that with `git checkout` and _magic_
 
-```shell
+```bash
 $ git checkout $(( git for-each-ref --format '%(refname:lstrip=2)' refs/heads; \
 git for-each-ref --format '%(refname:lstrip=3)' refs/remotes/origin ) | \
 awk '{ print length(), $0 | "sort -n" }' | uniq | \

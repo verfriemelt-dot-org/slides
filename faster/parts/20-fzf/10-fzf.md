@@ -46,7 +46,7 @@ $
 
 --- 
 
-```shell
+```bash
 $ (echo foo-1-baz; echo foo-2-bar; echo foo-1-wtf) | fzf
 ```
 
@@ -72,7 +72,7 @@ $ (echo foo-1-baz; echo foo-2-bar; echo foo-1-wtf) | fzf
 
 . . .
 
-```shell
+```bash
 $ (echo foo-1-baz; echo foo-2-bar; echo foo-1-wtf) | fzf
 foo-1-baz
 

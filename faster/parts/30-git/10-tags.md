@@ -2,7 +2,7 @@
 
 # git - tags
 
-```shell
+```bash
 $ git tag
 4.1.0
 4.10.0
@@ -19,11 +19,11 @@ $ git tag
 
 . . .
 
-```shell
+```bash
 $ git config --global tag.sort version:refname
 ```
 
-```shell
+```bash
 $ git tag
 4.8.1
 4.8.2

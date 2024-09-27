@@ -6,7 +6,7 @@
 
 > The command finds the most recent tag that is reachable from a commit. If the tag points to the commit, then only the tag is shown. Otherwise, it suffixes the tag name with the number of additional commits on top of the tagged object and the abbreviated object name of the most recent commit. The result is a "human-readable" object name which can also be used to identify the commit to other git commands.
 
-```shell
+```bash
 $ git tag 0.0.1 HEAD~2
 $ git describe --tags
 0.0.1-2-ge2f5a07
@@ -24,7 +24,7 @@ $ git describe --tags
 
 useful for container image tagging and versions in footers
 
-```shell
+```bash
 $ git describe --tags > .version
 $ docker build . -t service-$(git describe --tags)
 ```

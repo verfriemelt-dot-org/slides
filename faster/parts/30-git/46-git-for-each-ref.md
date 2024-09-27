@@ -4,7 +4,7 @@
 
 > Iterate over all refs that match `<pattern>` and show them according to the given `<format>`, after sorting them according to the given set of `<key>`. If `<count>` is given, stop after showing that many refs. The interpolated values in `<format>` can optionally be quoted as string literals in the specified host language allowing their direct evaluation in that language.
 
-```shell
+```bash
 $ git for-each-ref
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/heads/JIRA-1337/implement-something-nice
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/heads/main
@@ -25,7 +25,7 @@ e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/tags/0.0.2
 
 . . .
 
-```shell
+```bash
 $ git for-each-ref refs/heads refs/remotes
 e2f5a0786c0bc57269a9b5ec654581fac4624119 commit refs/heads/JIRA-1337/implement-something-nice
 565bee11eac5e4cd68771ff9239b1f2371f255a4 commit refs/heads/main
