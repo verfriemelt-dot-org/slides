@@ -1,6 +1,6 @@
 ---
 
-# git - tags
+# git - tags sorting
 
 ```bash
 $ git tag

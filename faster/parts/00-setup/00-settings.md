@@ -2,7 +2,7 @@
 title: faster » random things to gain velocity
 author: Richard Heine
 patat:
-  incrementalLists: false
+  incrementalLists: true
   wrap: true
   margins:
     left: 4

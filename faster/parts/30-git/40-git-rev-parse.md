@@ -43,3 +43,15 @@ then
     exit 1
 fi
 ```
+
+. . .
+
+# git rev-parse --show-toplevel
+
+```
+$ cd /example
+$ git init .
+$ mkdir foo/bar/what -p && cd foo/bar/what 
+$ git rev-parse --show-toplevel
+/example
+```

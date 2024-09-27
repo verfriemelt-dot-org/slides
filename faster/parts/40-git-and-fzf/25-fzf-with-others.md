@@ -6,6 +6,8 @@
 $ git cherry-pick $(git log --oneline --all --reverse | fzf | cut -f1 -d ' ')
 ```
 
+# fzf + git merge
+
 ```bash
 $ git merge $(git-branch-picker)
 ```
