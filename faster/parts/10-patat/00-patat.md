@@ -1,3 +1,5 @@
+---
+
 # patat
 
 a presentation tool built by _Jasper Van der Jeugt_
@@ -21,5 +23,3 @@ patat:
 
 # slide 2
 ```
-
---- 

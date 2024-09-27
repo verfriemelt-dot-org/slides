@@ -1,3 +1,5 @@
+---
+
 # git - conditional includes
 
 **~/.gitconfig**
@@ -73,7 +75,3 @@ commit 75f56e1 (HEAD -> main)
 Author: Richard Heine <rheine@work.org>
 Date:   2024-09-27 08:35:01 +0200
 ```
-
-
----
-

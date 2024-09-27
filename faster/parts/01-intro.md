@@ -1,10 +1,18 @@
+---
+
+<!--config:
+margins:
+  left: auto
+  right: auto
+  top: auto
+theme:
+  codeBlock: [ vividGreen ]
+-->
+
 ```figlet
 faster !!!
 ```
-
-. . .
-
-random things to get there
+# random things to get faster
 
 ---
 
@@ -17,5 +25,3 @@ random things to get there
 * fzf
 * entr
 * githooks
-
----
