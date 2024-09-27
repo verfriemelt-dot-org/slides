@@ -21,3 +21,12 @@ origin/JIRA-31337/something-even-nicer
 origin/main
 ```
 
+**does not work**
+```
+$ git checkout origin/JIRA-31337/something-even-nicer
+Note: switching to 'origin/JIRA-31337/something-even-nicer'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+```
