@@ -2,15 +2,15 @@
 title: faster » random things to gain velocity
 author: Richard Heine
 patat:
-  incrementalLists: true
+  incrementalLists: false
   wrap: true
   margins:
     left: 4
     right: 10
     top: 3
-  #  transition:
-  #    type: slideLeft
-  #    frameRate: 30
+  transition:
+    type: dissolve
+    duration: 0.3
   theme:
     emph: [ bold,vividRed,italic ]
     strong: [ bold ]

@@ -162,11 +162,45 @@ $ head ~/bin/git-branch-picker
     git for-each-ref --format '%(refname:lstrip=3)' refs/remotes/origin ) | \
     awk '{ print length(), $0 | "sort -n" }' | uniq | \
     cut -d ' ' -f2- | \
-    fzf
+    fzf --preview="git -c color.ui=always log --no-merges -n 100 --oneline \$( git show-ref {} -s | head -n1 ) --"
 ```
 
 alias with
 
 ```bash
 $ alias gb="git checkout $(git-branch-picker)"
+```
+
+. . .
+
+note the extra options
+```bash
+fzf --preview="git -c color.ui=always log --no-merges -n 100 --oneline \$( git show-ref {} -s | head -n1 ) --"
+```
+
+```
+                                     ╭──────────────────────────────────╮
+                                     │ d741e02 git rev-parse --toplevel │
+                                     │ b2b98c1 more examples            │
+                                     │ 6506944 more seperation          │
+                                     │ 50efe70 fzf + cd                 │
+                                     │ 2934d57 fzf + git for-each-ref   │
+                                     │ 30e42c1 fzf + git for-each-ref   │
+                                     │ ded3faf fzf + git for-each-ref   │
+                                     │ c7caae9 fzf + git for-each-ref   │
+                                     │ 5a65ea0 git for-each-ref         │
+                                     │ 565bee1 more slides              │
+                                     │ e2f5a07 includes                 │
+                                     │ e62b21e drop faster.md in favor  │
+                                     │ 75f56e1 init                     │
+                                     │                                  │
+                                     │                                  │
+                                     │                                  │
+                                     │                                  │
+  JIRA-1337/implement-something-nice │                                  │
+  JIRA-1337/implement-something-lame │                                  │
+  JIRA-31337/something-even-nicer    │                                  │
+▌ main                               │                                  │
+  4/4 ────────────────────────────── │                                  │
+>                                    ╰──────────────────────────────────╯
 ```
