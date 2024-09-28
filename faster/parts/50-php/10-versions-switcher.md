@@ -182,6 +182,22 @@ fi
 exec /usr/bin/php "$@"
 ```
 
+---
+
+```bash
+$ stat ~/bin/php
+  File: /home/easteregg/bin/php
+  Size: 600             Blocks: 8          IO Block: 4096   regular file
+Device: 253,1   Inode: 15205047    Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/easteregg)   Gid: ( 1000/easteregg)
+Access: 2022-11-10 10:31:10.044190867 +0100
+Modify: 2024-09-27 18:56:55.881549881 +0200
+Change: 2024-09-27 18:56:55.881549881 +0200
+ Birth: 2022-11-10 10:31:10.044190867 +0100
+```
+
+no issues so far
+
 --- 
 
 <!--config:
