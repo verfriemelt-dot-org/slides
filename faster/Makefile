@@ -10,6 +10,6 @@ compile: ## creates final faster.md
 watch: ## creates watcher with entr to recompile
 	find parts | entr -c make compile
 
-run: ## run patat in watcher mode
+run: compile ## run patat in watcher mode
 	patat -w compile.md
 

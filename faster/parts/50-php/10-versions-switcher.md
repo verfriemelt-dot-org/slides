@@ -87,8 +87,9 @@ exec /usr/bin/php "$@"
 
 . . . 
 
+**overwriting with `PHP` env var**
 ```bash
-$ PHP=7.1 php --version
+$ HP=7.1 php --version
 PHP 7.1.33-64+0~20240802.94+debian11~1.gbpa8e4d8 (cli) (built: Aug  2 2024 16:05:50) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies
@@ -128,7 +129,7 @@ fi
 
 ```bash
 # read supported versions and pick the latest one via head -n1
-version=$(jq -r .require.php <"${_project_root}/composer.json" 2>/dev/null| grep -o "[0-9].[0-9]" | tail -n1)
+version=$(jq -r .require.php <"${_project_root}/composer.json" 2>/dev/null | grep -o "[0-9].[0-9]" | tail -n1)
 
 # check if version is empty
 if [[ -z "$version" ]]
