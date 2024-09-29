@@ -197,18 +197,3 @@ Change: 2024-09-27 18:56:55.881549881 +0200
 ```
 
 no issues so far
-
---- 
-
-<!--config:
-margins:
-  left: auto
-  right: auto
-  top: auto
-theme:
-  codeBlock: [ vividGreen ]
--->
-
-```figlet
-demo #1
-```

@@ -11,4 +11,4 @@ watch: ## creates watcher with entr to recompile
 	find parts | entr -c make compile
 
 run: compile ## run patat in watcher mode
-	patat -w compile.md
+	patat -w compiled.md

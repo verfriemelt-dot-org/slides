@@ -18,14 +18,11 @@ bindkey -s "^b^d" "docker compose down\n"
 bindkey -s "^b^k" "docker compose down -v\n"
 bindkey -s "^b^w" "docker compose exec php /bin/bash\n"
 
-
-
 bindkey -s "^p^i" "composer install\n"
 bindkey -s "^p^u" "composer update\n"
 bindkey -s "^p^u^u" "composer update --no-scripts\n"
 bindkey -s "^p^b" "composer bump\n"
 bindkey -s "^p^o" "composer outdated --locked -D\n"
-
 
 bindkey -s "^p^t" "phpunit\n"
 bindkey -s "^p^r" "nice -19 rector\n"

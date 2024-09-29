@@ -24,7 +24,7 @@ openRepository() {
 }
 
 zle -N openRepository
-bindkey "^g" openRepository
+bindkey "^g^g" openRepository
 ```
 
 ---
