@@ -1,0 +1,12 @@
+openRepository() {
+    destination=$(find $HOME/src -mindepth 2 -maxdepth 2 | cut -d '/' -f 5- | sort -r | fzf)
+
+    if [[ ! -z $destination ]]
+    then
+      cd $HOME/src/"$destination"
+      zle reset-prompt
+    fi
+}
+
+zle -N openRepository
+bindkey "^g" openRepository

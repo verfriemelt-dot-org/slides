@@ -1,0 +1,45 @@
+bindkey -s "^g^p" "git pull\n"
+bindkey -s "^g^f" "git fetch --all\n"
+bindkey -s "^g^u" "git push -u\n"
+bindkey -s "^g^s" "git status\n"
+bindkey -s "^g^d" "git diff\n"
+bindkey -s "^g^b" "git checkout \$(gf -o -c)\n"
+bindkey -s "^g^m" "git merge \$(gf -o)\n"
+bindkey -s "^g^rc" "git rebase --continue\n"
+bindkey -s "^g^rs" "git rebase --skip\n"
+bindkey -s "^g^ra" "git rebase --abort\n"
+bindkey -s "^g^a" "git add -p\n"
+
+
+
+bindkey -s "^b^u" "docker compose up\n"
+bindkey -s "^b^b" "docker compose build --pull\n"
+bindkey -s "^b^d" "docker compose down\n"
+bindkey -s "^b^k" "docker compose down -v\n"
+bindkey -s "^b^w" "docker compose exec php /bin/bash\n"
+
+
+
+bindkey -s "^p^i" "composer install\n"
+bindkey -s "^p^u" "composer update\n"
+bindkey -s "^p^u^u" "composer update --no-scripts\n"
+bindkey -s "^p^b" "composer bump\n"
+bindkey -s "^p^o" "composer outdated --locked -D\n"
+
+
+bindkey -s "^p^t" "phpunit\n"
+bindkey -s "^p^r" "nice -19 rector\n"
+bindkey -s "^p^s" "nice -19 phpstan -vvv\n"
+bindkey -s "^p^f" "nice -19 infection --show-mutations --threads=max -vvv\n"
+bindkey -s "^p^x" "[ -z \"\$XDEBUG_MODE\" ] && export XDEBUG_MODE=debug || unset XDEBUG_MODE \n"
+bindkey -s "^p^w^t" "fd \\.php$ -E var/cache | entr -c phpunit\n"
+bindkey -s "^p^w^s" "fd \\.php$ -E var/cache | entr -c nice -19 phpstan -vvv\n"
+
+
+
+bindkey -s "^o^m" ' -o merge_request.create'
+bindkey -s "^o^n" ' -o merge_request.title=""'
+bindkey -s "^o^l" ' -o merge_request.label=""'
+bindkey -s "^o^t" ' -o merge_request.target=release/'
+bindkey -s "^o^a" ' -o merge_request.merge_when_pipeline_succeeds'
+bindkey -s "^g^u^m" 'git push -u -o merge_request.create -o merge_request.merge_when_pipeline_succeeds -o merge_request.title=""'
