@@ -10,8 +10,6 @@ bindkey -s "^g^rs" "git rebase --skip\n"
 bindkey -s "^g^ra" "git rebase --abort\n"
 bindkey -s "^g^a" "git add -p\n"
 
-
-
 bindkey -s "^b^u" "docker compose up\n"
 bindkey -s "^b^b" "docker compose build --pull\n"
 bindkey -s "^b^d" "docker compose down\n"
