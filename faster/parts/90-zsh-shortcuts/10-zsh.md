@@ -46,6 +46,8 @@ demo #4
 
 # The Zsh Line Editor (ZLE) & `bindkey`
 
+https://zsh.sourceforge.io/Guide/zshguide04.html
+
 ```
     -s in-string out-string ...
 
