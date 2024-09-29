@@ -136,7 +136,7 @@ do
 done
 [[ -z $config_path ]] && return
 
-possible_paths=( "$_git_root/bin/paratest" "$_git_root/bin/phpunit" "$_git_root/vendor/bin/paratest" "$_git_root/vendor/bin/phpunit" )
+possible_paths=( "$_git_root/vendor/bin/paratest" "$_git_root/vendor/bin/phpunit" )
 for phpunit_path in ${possible_paths[@]}
 do
   if [[ -f $phpunit_path ]]
