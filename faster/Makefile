@@ -12,4 +12,3 @@ watch: ## creates watcher with entr to recompile
 
 run: compile ## run patat in watcher mode
 	patat -w compile.md
-

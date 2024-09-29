@@ -306,5 +306,5 @@ theme:
 -->
 
 ```figlet
-demo #2
+demo #3
 ```

@@ -1,0 +1,2 @@
+echo alias gg='cd $HOME/src/"$(find $HOME/src -mindepth 2 -maxdepth 2 | cut -d '/' -f 5- | sort -r | fzf)"'
+alias gg='cd $HOME/src/"$(find $HOME/src -mindepth 2 -maxdepth 2 | cut -d '/' -f 5- | sort -r | fzf)"'

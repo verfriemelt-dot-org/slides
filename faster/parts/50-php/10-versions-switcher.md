@@ -210,5 +210,5 @@ theme:
 -->
 
 ```figlet
-demo #0
+demo #1
 ```

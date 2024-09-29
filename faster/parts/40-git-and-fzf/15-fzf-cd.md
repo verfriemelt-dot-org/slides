@@ -4,11 +4,20 @@
 
 listing all your projects
 ```bash
-$ find $HOME/src -maxdepth 1 -type d -printf "%f\n"
-sachsencacher.de
-slides
-wrapped
-[...]
+$ find $HOME/src -mindepth 2 -maxdepth 2 | cut -d '/' -f 5-
+private/phpstan-src
+private/infection
+private/slides
+private/symfony1
+private/phpunit
+private/PHP-CS-Fixer
+private/symfony
+private/wrapped
+private/timer
+private/sachsencacher.de
+work/frankenphp
+work/matomo
+work/laravel
 ```
 
 . . .
@@ -16,5 +25,7 @@ wrapped
 combine with the `cd` command & store as an alias
 
 ```bash
-$ alias gg='cd $HOME/src/"$(find $HOME/src -maxdepth 1 -type d -printf "%f\n" | sort -r | fzf)"'
+$ alias gg='cd $HOME/src/"$(find $HOME/src -mindepth 2 -maxdepth 2 | cut -d '/' -f 5- | sort -r | fzf)"'
 ```
+
+

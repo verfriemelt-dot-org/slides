@@ -1,0 +1,10 @@
+echo export PATH=\$HOME/src/private/slides/faster/demo/bin:\$PATH
+export PATH=$HOME/src/private/slides/faster/demo/bin:$PATH
+
+echo
+echo alias gb="git checkout \$(git-branch-picker)"
+alias gb="git checkout \$(git-branch-picker)"
+
+echo
+echo alias ffb='tig blame -- \$(fzf)'
+alias ffb='tig blame -- $(fzf)'
