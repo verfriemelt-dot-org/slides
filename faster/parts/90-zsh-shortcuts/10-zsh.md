@@ -91,8 +91,8 @@ bindkey -s "^b^w" "docker compose exec php /bin/bash\n"
 **composer**
 ```bash
 bindkey -s "^p^i" "composer install\n"
-bindkey -s "^p^u" "composer update\n"
-bindkey -s "^p^u^u" "composer update --no-scripts\n"
+bindkey -s "^p^u" "composer update --bump-after-update \n"
+bindkey -s "^p^u^u" "composer update --bump-after-update --no-scripts\n"
 bindkey -s "^p^b" "composer bump\n"
 bindkey -s "^p^o" "composer outdated --locked -D\n"
 ```
