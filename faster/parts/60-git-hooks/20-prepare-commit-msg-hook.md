@@ -104,18 +104,3 @@ Date:   2024-09-27 22:16:02 +0200
 
     JIRA-1: i did related to another jira
 ```
-
---- 
-
-<!--config:
-margins:
-  left: auto
-  right: auto
-  top: auto
-theme:
-  codeBlock: [ vividGreen ]
--->
-
-```figlet
-demo #1
-```

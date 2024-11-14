@@ -1,11 +1,34 @@
 ---
 
+<!--
+* git rev-parse
+* [n] beschreibung von der man-page
+* [n] you think you know git by Scott Chacon (Co-founder of Github)
+* [n] wozu: revision anzeigen
+* [n] wozu: auch in kurz
+* [n] wozu: innerhalb von einem arbeitsverzeichnis
+* [n] sehr nützlich um scripte zu beenden wenn nicht in einem arbeitsverzeichnis; funktioniert in unterordner
+* [n] wozu: --show-toplevel um git-repository-workdir-root zu finden
+
+* [n] git describe
+-->
+
 # git rev-parse 
+
+. . .
 
 > git-rev-parse - Pick out and massage parameters
 
+. . . 
+
+# So You Think You Know Git - FOSDEM 2024
+
+https://www.youtube.com/watch?v=aolI_Rz0ZqY
+
+. . . 
+
 ```bash
-$  git rev-parse HEAD
+$ git rev-parse HEAD
 04bdae471848b34890a219699c1ad5105f2de279
 ```
 

@@ -1,5 +1,22 @@
 ---
 
+<!--config:
+margins:
+  left: auto
+  right: auto
+  top: auto
+theme:
+  codeBlock: [ vividGreen ]
+-->
+
+```figlet
+tig
+```
+
+---
+
+---
+
 # git - tig
 
 **What is Tig?**

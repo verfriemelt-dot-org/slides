@@ -1,5 +1,14 @@
 ---
 
+<!--
+* git refs sind files im .git/refs order
+* refs sind pointer auf commits
+* refs sind commit-ids, tags & branches
+* [n] filter möglich
+* [n] mehrere filter möglich
+* [n] outformatierung
+-->
+
 # git for-each-ref
 
 > Iterate over all refs that match `<pattern>` and show them according to the given `<format>`, after sorting them according to the given set of `<key>`. If `<count>` is given, stop after showing that many refs. The interpolated values in `<format>` can optionally be quoted as string literals in the specified host language allowing their direct evaluation in that language.

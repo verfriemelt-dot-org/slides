@@ -1,5 +1,26 @@
 ---
 
+<!--config:
+margins:
+  left: auto
+  right: auto
+  top: auto
+theme:
+  codeBlock: [ vividGreen ]
+-->
+
+```figlet
+git hooks 
+```
+
+---
+
+<!--
+* githooks lokal
+* configuration auch global möglich
+
+-->
+
 # git hooks
 
 ```

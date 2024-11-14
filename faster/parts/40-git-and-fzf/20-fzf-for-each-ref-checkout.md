@@ -1,5 +1,21 @@
 ---
 
+<!--
+* schnelleres auschecken von branches
+* filter über branches
+* sortierung hier ungünstig - main ist oben
+* [n] fix der sortierung
+* [n] hinzufügen der remote branches
+* [n] auscheck problem
+* [n] duplicate mit uniq filter
+* [n] mit checkout combinieren
+* [n] in ein script verpacken & alias
+* [n] preview log für fzf
+
+
+
+-->
+
 # fzf & git for-each-ref » check 'dis out!
 
 **give me branches**

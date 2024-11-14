@@ -1,5 +1,10 @@
 ---
 
+<!--
+* schnelles blaming mit tig und fzf
+* [n] als alias immer verfügbar
+-->
+
 # fzf + tig
 
 **blame**

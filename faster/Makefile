@@ -5,7 +5,7 @@ help: ## Shows this help
 compile: ## creates final compiled.md
 	rm -f compiled.md || true
 	touch compiled.md
-	for part in $$(find ./parts  -type f | sort); do (cat $$part; echo) >> compiled.md; done
+	for part in $$(find ./parts  -type f | grep -E 'md$$' | sort); do (cat $$part; echo) >> compiled.md; done
 
 watch: ## creates watcher with entr to recompile
 	find parts | entr -c make compile

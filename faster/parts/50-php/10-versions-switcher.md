@@ -1,5 +1,15 @@
 ---
 
+<!--
+* versions switcher für php
+* debian/ubuntu via deb.sury.org
+* relevant für hooks
+* [n] liste an versionen
+* [n] update alternatives
+
+
+-->
+
 # working with multiple php versions
 
 the non-docker user
@@ -62,7 +72,7 @@ Press <enter> to keep the current choice[*], or type selection number:
 assumptions:
 
  * we want to run the minimal supported php version by a project
- * if in a project, we want to use the projects version, otherwise the system default
+ * if in a project, we want to use the projects version specified in `composer.json`, otherwise the system default
  * version constraints for php often look like this
      * `"php": ">=8.1"`
      * `"php": "^7.4 || ^8.1"`
@@ -87,13 +97,22 @@ exec /usr/bin/php "$@"
 
 . . . 
 
+```bash
+$ php
+8.4.0RC3 (cli) (built: Nov  4 2024 23:24:44) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.4.0RC3, Copyright (c) Zend Technologies
+```
+
 **overwriting with `PHP` env var**
 ```bash
-$ HP=7.1 php --version
+$ PHP=7.1 php --version
 PHP 7.1.33-64+0~20240802.94+debian11~1.gbpa8e4d8 (cli) (built: Aug  2 2024 16:05:50) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies
 ```
+
+
 
 ---
 
@@ -174,26 +193,10 @@ then
     exec /usr/bin/php "$@"
 fi
 
-if command -v php"$version">/dev/null
+if ! command -v php"$version">/dev/null
 then
-    exec php"$version" "$@"
+    exec /usr/bin/php "$@"
 fi
 
-exec /usr/bin/php "$@"
+exec php"$version" "$@"
 ```
-
----
-
-```bash
-$ stat ~/bin/php
-  File: /home/easteregg/bin/php
-  Size: 600             Blocks: 8          IO Block: 4096   regular file
-Device: 253,1   Inode: 15205047    Links: 1
-Access: (0755/-rwxr-xr-x)  Uid: ( 1000/easteregg)   Gid: ( 1000/easteregg)
-Access: 2022-11-10 10:31:10.044190867 +0100
-Modify: 2024-09-27 18:56:55.881549881 +0200
-Change: 2024-09-27 18:56:55.881549881 +0200
- Birth: 2022-11-10 10:31:10.044190867 +0100
-```
-
-no issues so far

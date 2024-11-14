@@ -1,6 +1,36 @@
 ---
 
+<!--config:
+margins:
+  left: auto
+  right: auto
+  top: auto
+theme:
+  codeBlock: [ vividGreen ]
+-->
+
+```figlet
+git
+```
+
+---
+
+<!--
+* mein tag gibts schon
+* [n] git tags by default no natural sorting
+* config option: tag.sort
+
+
+-->
+
 # git - tags sorting
+
+```shell
+$ git tag 4.10.0
+fatal: tag '4.10.0' already exists
+```
+
+. . . 
 
 ```bash
 $ git tag
@@ -21,9 +51,6 @@ $ git tag
 
 ```bash
 $ git config --global tag.sort version:refname
-```
-
-```bash
 $ git tag
 4.8.1
 4.8.2

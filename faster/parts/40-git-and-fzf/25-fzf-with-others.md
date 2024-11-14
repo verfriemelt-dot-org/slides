@@ -1,5 +1,10 @@
 ---
 
+<!--
+* kombination mit cherry-pick
+* kombination mit merge
+-->
+
 # fzf + git cherry-pick
 
 ```bash
@@ -12,8 +17,6 @@ $ git cherry-pick $(git log --oneline --all --reverse | fzf | cut -f1 -d ' ')
 $ git merge $(git-branch-picker)
 ```
 
----
-
 --- 
 
 <!--config:
@@ -25,6 +28,3 @@ theme:
   codeBlock: [ vividGreen ]
 -->
 
-```figlet
-demo #0
-```

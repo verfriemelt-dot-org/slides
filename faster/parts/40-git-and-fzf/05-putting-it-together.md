@@ -10,7 +10,7 @@ theme:
 -->
 
 ```figlet
-entr
+lets put it together 
 ```
 
 ---

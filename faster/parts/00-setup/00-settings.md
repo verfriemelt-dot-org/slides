@@ -1,6 +1,5 @@
 ---
 title: faster » random things to gain velocity
-author: Richard Heine
 patat:
   incrementalLists: false
   wrap: true
@@ -28,6 +27,8 @@ patat:
       command: bash -e 
       fragment: false
       replace: true
+  speakerNotes:
+    file: /tmp/notes.txt
 ...
 
 

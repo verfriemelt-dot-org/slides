@@ -17,7 +17,7 @@ a7ffe04 2024-07-22 11:58:01 +0200 a7ffe04 stan ..
 
 . . .
 
-hint: typical pipelineruns at the time took about 3 minutes
+hint: typical pipelineruns at the time took about 3-5 minutes
 
 . . . 
 
@@ -32,7 +32,7 @@ hint: typical pipelineruns at the time took about 3 minutes
 
 ---
 
-# pre-commit hook
+# pre-commit-hook
 
 > The pre-commit hook is run first, before you even type in a commit message. It’s used to inspect the snapshot that’s about to be committed, to see if you’ve forgotten something, to make sure tests run, or to examine whatever you need to inspect in the code. Exiting non-zero from this hook aborts the commit, although you can bypass it with git commit `--no-verify`. 
 
@@ -42,8 +42,21 @@ hint: typical pipelineruns at the time took about 3 minutes
 
 `~/.githooks/pre-commit`
 ```bash
+#!/bin/bash
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-source $script_dir/common/prepare.sh
+
+black=$'\e[30m'
+red=$'\e[31m'
+green=$'\e[32m'
+yellow=$'\e[33m'
+blue=$'\e[34m'
+magenta=$'\e[35m'
+cyan=$'\e[36m'
+white=$'\e[37m'
+reset=$'\e[0;0m'
+
+_git_repository_root=$( git rev-parse --show-toplevel )
+_git_branchname=$( git symbolic-ref -q HEAD )
 
 if [[ $(pwd) =~ /work/ ]]
 then
@@ -294,17 +307,3 @@ $ skip=. git commit -m 'fix typo' readme.md
 $ skip=phpstan git commit -am 'resolv phpstan baseline'
 ```
 
---- 
-
-<!--config:
-margins:
-  left: auto
-  right: auto
-  top: auto
-theme:
-  codeBlock: [ vividGreen ]
--->
-
-```figlet
-demo #3
-```

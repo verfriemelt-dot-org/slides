@@ -12,7 +12,7 @@ theme:
 ```figlet
 faster !!!
 ```
-# random things to get faster
+# random things to be faster
 
 ---
 
@@ -35,6 +35,11 @@ big thank you
 > Fixer is a great and widely used tool, but comparing to other modern PHP tools it lacked one crucial thing: ability to utilise more CPU cores. Until now 🥳 !
 
 
+<!--
+* ursprünglich nur single core support
+* extreme performance verbesserung
+-->
+
 ---
 
 <!--config:
@@ -49,3 +54,13 @@ theme:
 ```figlet
 hi
 ```
+
+. . .
+
+Richard Heine
+
+<!--
+ * hi
+ * [n] name
+-->
+ 

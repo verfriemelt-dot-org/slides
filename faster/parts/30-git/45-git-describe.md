@@ -1,5 +1,12 @@
 ---
 
+<!--
+* git describe um menschenlesbar eine revision zu beschreiben
+* nutzt nur annotierte tags per default, keine lightweight tags
+* [n] bei exakter version ohne revision
+
+-->
+
 # git describe
 
 > Give an object a human readable name based on an available ref

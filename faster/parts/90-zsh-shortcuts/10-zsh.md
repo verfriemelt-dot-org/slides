@@ -1,5 +1,22 @@
 ---
 
+<!--config:
+margins:
+  left: auto
+  right: auto
+  top: auto
+theme:
+  codeBlock: [ vividGreen ]
+-->
+
+```figlet
+zsh
+```
+
+---
+
+---
+
 # zsh
 
 > Zsh is a UNIX command interpreter (shell) usable as an interactive login shell and as a shell script command processor. Of the standard shells, zsh most closely resembles ksh but includes many enhancements. Zsh has command line editing, builtin spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and a host of other features.
@@ -25,21 +42,6 @@ openRepository() {
 
 zle -N openRepository
 bindkey "^g^g" openRepository
-```
-
----
-
-<!--config:
-margins:
-    left: auto
-    right: auto
-    top: auto
-theme:
-    codeBlock: [ vividGreen ]
--->
-
-```figlet
-demo #4
 ```
 
 ---

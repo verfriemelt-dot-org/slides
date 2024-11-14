@@ -1,5 +1,17 @@
 ---
 
+<!--
+* config basierend auf dem aktuellen verzeichnis
+* config basierend auf dem aktuellen branch
+* config basierend auf dem aktuellen remote url
+* [n] beispiel für generische config
+* [n] private config
+* [n] arbeits config mit seperated ssh key 
+* global definiertes gitignore file
+* [n] beispiel
+
+-->
+
 # git - conditional includes
 
 **~/.gitconfig**
@@ -13,6 +25,13 @@
 [includeIf "gitdir:~/src/private/"]
   path = ~/.config/git/private
 ```
+
+. . .
+
+ * gitdir & gitdir/i
+ * onbranch `[includeIf "onbranch:foo-branch"]`
+ * hasconfig:remote.*.url `[includeIf "hasconfig:remote.*.url:https://example.com/**"]`
+    * > As for the naming of this keyword, it is for forwards compatibility with a naming scheme that supports more variable-based include conditions, but currently Git only supports the exact keyword described above.
 
 . . . 
 
