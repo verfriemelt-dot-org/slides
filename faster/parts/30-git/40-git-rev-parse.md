@@ -1,18 +1,5 @@
 ---
 
-<!--
-* git rev-parse
-* [n] beschreibung von der man-page
-* [n] you think you know git by Scott Chacon (Co-founder of Github)
-* [n] wozu: revision anzeigen
-* [n] wozu: auch in kurz
-* [n] wozu: innerhalb von einem arbeitsverzeichnis
-* [n] sehr nützlich um scripte zu beenden wenn nicht in einem arbeitsverzeichnis; funktioniert in unterordner
-* [n] wozu: --show-toplevel um git-repository-workdir-root zu finden
-
-* [n] git describe
--->
-
 # git rev-parse 
 
 . . .

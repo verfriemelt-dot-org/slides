@@ -1,10 +1,5 @@
 ---
 
-<!--
-* kombination mit cherry-pick
-* kombination mit merge
--->
-
 # fzf + git cherry-pick
 
 ```bash

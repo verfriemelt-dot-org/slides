@@ -1,17 +1,5 @@
 ---
 
-<!--
-* config basierend auf dem aktuellen verzeichnis
-* config basierend auf dem aktuellen branch
-* config basierend auf dem aktuellen remote url
-* [n] beispiel für generische config
-* [n] private config
-* [n] arbeits config mit seperated ssh key 
-* global definiertes gitignore file
-* [n] beispiel
-
--->
-
 # git - conditional includes
 
 **~/.gitconfig**

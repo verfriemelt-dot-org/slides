@@ -1,9 +1,5 @@
 ---
 
-<!--
-^a1 für demo
--->
-
 # fzf + cd
 
 listing all your projects

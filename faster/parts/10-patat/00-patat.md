@@ -24,9 +24,3 @@ patat:
 
 # slide 2
 ```
-
-<!--
-* Presentations Atop The ANSI Terminal
-* meine choice für präsentationen
-* einfache schnelle slides in markdown
--->

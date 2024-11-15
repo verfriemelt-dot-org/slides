@@ -15,12 +15,6 @@ git hooks
 
 ---
 
-<!--
-* githooks lokal
-* configuration auch global möglich
-
--->
-
 # git hooks
 
 ```

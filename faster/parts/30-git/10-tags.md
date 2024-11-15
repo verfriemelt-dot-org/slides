@@ -15,14 +15,6 @@ git
 
 ---
 
-<!--
-* mein tag gibts schon
-* [n] git tags by default no natural sorting
-* config option: tag.sort
-
-
--->
-
 # git - tags sorting
 
 ```shell

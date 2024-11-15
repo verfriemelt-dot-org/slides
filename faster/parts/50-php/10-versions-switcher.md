@@ -1,15 +1,5 @@
 ---
 
-<!--
-* versions switcher für php
-* debian/ubuntu via deb.sury.org
-* relevant für hooks
-* [n] liste an versionen
-* [n] update alternatives
-
-
--->
-
 # working with multiple php versions
 
 the non-docker user
