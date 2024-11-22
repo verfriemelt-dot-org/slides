@@ -33,8 +33,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - run: curl -L https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-1-amd64.deb --output pandoc.deb
+      - run: sudo dpkg -i pandoc.deb
       - run: make
-        uses: docker://pandoc/core:3.5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
