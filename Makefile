@@ -1,5 +1,5 @@
 build:
-	@rm index.html
+	@rm index.html || true
 	for dir in */; do \
 		echo $$dir; \
 		make compile -C $$dir ; \
