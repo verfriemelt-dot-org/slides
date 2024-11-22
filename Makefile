@@ -1,4 +1,5 @@
 build:
+	@rm index.html
 	for dir in */; do \
 		echo $$dir; \
 		make compile -C $$dir ; \
