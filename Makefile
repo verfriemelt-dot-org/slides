@@ -1,5 +1,8 @@
+SHELL := /bin/bash
+
 build:
 	@rm index.html || true
+	echo "<h1>slides:</h1>" >> index.html ; \
 	for dir in */; do \
 		echo $$dir; \
 		make compile -C $$dir ; \
@@ -12,7 +15,7 @@ build:
 			-o $$dir/index.html \
 			$$dir/compiled.md \
 		; \
-		echo "<a href='$$dirindex.html'>$$dir</a>" >> index.html ; \
+		echo "<a href=$${dir}index.html>$${dir/\//}</a>" >> index.html ; \
 	done
 
 
