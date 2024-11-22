@@ -3,7 +3,8 @@ SHELL := /bin/bash
 build:
 	@rm index.html || true
 	@echo "<h1>slides:</h1>" >> index.html
-	@echo "<p>slides are intented to be displayed with patat! might not fully work with revealjs</p>" >> index.html
+	@echo "<p>slides are intented to be displayed with patat! so revealjs might look odd</p>" >> index.html
+	@echo "<p><a href='https://github.com/verfriemelt-dot-org/slides'>sources can be found here</p>" >> index.html
 	@echo "<ul>" >> index.html
 	for dir in */; do \
 		echo $$dir; \
